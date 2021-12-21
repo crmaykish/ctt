@@ -50,9 +50,6 @@ func main() {
 
 	fmt.Printf("Starting transfer...\r\n")
 
-	// Write the magic start byte
-	serialPort.Write([]byte{MAGIC_BYTE})
-
 	// Write the file bytes
 	bytesWritten, err := serialPort.Write(file)
 
